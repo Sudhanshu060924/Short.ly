@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
-import UrlForm from "./components/URLForm";
+import URLForm from "./components/URLForm";
 import RecentUrls from "./components/RecentUrls";
 import api from "./services/api";
 
