@@ -7,7 +7,7 @@ from app.schemas.url_schema import URLCreate, URLResponse
 from app.services.url_services import create_short_url, get_url
 
 router = APIRouter(
-    prefix="/urls",
+    
     tags=["URLs"]
 )
 

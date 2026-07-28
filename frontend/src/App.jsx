@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
-import UrlForm from "./components/UrlForm";
+import UrlForm from "./components/URLForm";
 import RecentUrls from "./components/RecentUrls";
 import api from "./services/api";
 
@@ -86,7 +86,7 @@ function App() {
         <section className="grid gap-8 lg:grid-cols-[1.7fr_1fr]">
           <div className="space-y-8 rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl">
             <Hero />
-            <UrlForm
+            <URLForm
               url={url}
               setUrl={setUrl}
               loading={loading}
