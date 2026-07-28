@@ -52,7 +52,7 @@ function App() {
     setError("");
 
     try {
-      const response = await api.post("/urls/shorten", { url });
+      const response = await api.post("/shorten", { url });
       const data = response.data;
 
       setResult(data);
