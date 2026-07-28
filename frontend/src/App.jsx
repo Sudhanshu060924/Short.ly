@@ -29,7 +29,7 @@ function App() {
   const [error, setError] = useState("");
 
   const latestShortUrl = result
-    ? `http://127.0.0.1:8000/urls/${result.short_code}`
+    ? `${api.defaults.baseURL}/${result.short_code}`
     : null;
 
   const copyToClipboard = async (value) => {
@@ -79,12 +79,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-white text-black">
       <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
         <Navbar />
 
         <section className="grid gap-8 lg:grid-cols-[1.7fr_1fr]">
-          <div className="space-y-8 rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl">
+          <div className="space-y-8 rounded-[32px] border border-gray-200 bg-white p-8 shadow-md">
             <Hero />
             <URLForm
               url={url}
@@ -96,7 +96,7 @@ function App() {
             />
           </div>
 
-          <div className="space-y-6 rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl">
+          <div className="space-y-6 rounded-[32px] border border-gray-200 bg-white p-8 shadow-md">
             <Stats />
             <RecentUrls recentUrls={recentUrls} onCopy={copyToClipboard} />
           </div>

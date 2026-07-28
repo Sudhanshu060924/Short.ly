@@ -1,52 +1,51 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #4b5563; /* gray-600 */
+  --accent: #16a34a; /* emerald-600 */
+  --border: #e5e7eb; /* gray-200 */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
 
 body {
-
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #f3f4f6;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#root{
-
-    width:100%;
+/* simple utilities used by components that relied on dark variants */
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
-div {
-
-    text-align: center;
-
+.muted {
+  color: var(--muted);
+}
+.accent {
+  color: var(--accent);
+}
+.accent-bg {
+  background-color: var(--accent);
+  color: white;
 }
 
 input {
-
-    width: 400px;
-
-    padding: 12px;
-
-    font-size: 16px;
-
+  font-size: 16px;
 }
-
 button {
-
-    padding: 10px 20px;
-
-    font-size: 16px;
-
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 a {
-
-    color: blue;
-
+  color: var(--accent);
 }

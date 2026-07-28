@@ -6,18 +6,18 @@ function Stats() {
   ];
 
   return (
-    <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 text-slate-100">
-      <p className="text-sm uppercase tracking-[0.3em] text-cyan-300/90">
+    <div className="rounded-3xl border border-gray-200 bg-white p-6 text-black">
+      <p className="text-sm uppercase tracking-[0.3em] text-emerald-600">
         Quick Stats
       </p>
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="rounded-3xl bg-white/5 p-4 text-center"
+            className="rounded-3xl bg-gray-50 p-4 text-center"
           >
-            <p className="text-2xl font-semibold text-white">{stat.value}</p>
-            <p className="text-sm text-slate-400">{stat.label}</p>
+            <p className="text-2xl font-semibold text-black">{stat.value}</p>
+            <p className="text-sm text-gray-600">{stat.label}</p>
           </div>
         ))}
       </div>
